@@ -13,3 +13,9 @@ from ex import ex_funcs
 )
 def test_ex_funcs(x: int, y: str, expected: int) -> None:
     assert ex_funcs(x, y) == expected
+
+
+# このテストは失敗します。yの型がintではなくstrになっているためです。
+# このように、型が違うとテストが失敗することがあります。
+if __name__ == "__main__":
+    pytest.main()
