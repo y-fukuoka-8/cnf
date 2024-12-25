@@ -19,6 +19,7 @@ def test_ex_funcs(x: int, y: str, expected: int) -> None:
 
 
 
+# このテストは成功します。yの型がintであるためです。
 # このテストは失敗します。yの型がintではなくstrになっているためです。
 # このように、型が違うとテストが失敗することがあります。
 if __name__ == "__main__":
